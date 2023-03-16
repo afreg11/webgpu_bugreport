@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "sourceMap": true,
+      "types": ["@webgpu/types", "@types/mocha",],
+      "importHelpers": true,
+    },
+}
