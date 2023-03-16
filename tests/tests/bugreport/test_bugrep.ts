@@ -157,8 +157,8 @@ export class BugReport {
         pass_encoder.setPipeline(this.pipelines.get("bugrep"));
         pass_encoder.setBindGroup(0, this.binding_groups.get("temp"));
         pass_encoder.dispatchWorkgroups(this.workgroups, 1, 1);
-        // pass_encoder.end();
-        pass_encoder.endPass();
+        pass_encoder.end();
+        // pass_encoder.endPass();
 
         command_encoder.copyBufferToBuffer(
             this.buffers.get("storage1"),
